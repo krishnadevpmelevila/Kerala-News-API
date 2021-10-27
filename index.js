@@ -148,7 +148,8 @@ newspapers.forEach(newspaper => {
 })
 
 app.get('/', (req, res) => {
-    res.json('Welcome to Nodeista News API')
+    res.status('403')
+    res.send('NOT ALLOWED!')
 })
 app.get('/news', (req, res) => {
     res.json(articles)
